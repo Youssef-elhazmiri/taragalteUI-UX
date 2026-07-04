@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <title>Homepage | Taragalte Festival</title>
+  <meta name="description" content="Taragalte Festival 2025 - Under The Stars. 31 Octobre 01 & 02 Novembre 2025 à M'Hamid El Ghizlane, Maroc.">
+  <link rel="icon" href="https://yeah.paleo.ch/themes/custom/paleo/favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="--paleo-theme-color: #c39c55; background-color: var(--paleo-theme-color);">
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="sr-only" style="position:fixed;top:1rem;left:1rem;z-index:999;background:#fff;color:#000;padding:.5rem 1rem;border-radius:.5rem;font-size:.875rem;font-weight:600;">Skip to main content</a>
+
+  <!-- ============================
+       MOBILE MENU OVERLAY
+       ============================ -->
+  <div class="mobile-menu-overlay" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site navigation">
+    <div class="mobile-menu-header">
+      <div class="site-logo">
+        <img src="https://www.taragalte.org/wp-content/uploads/elementor/thumbs/logo-taragalte-festival-couleurs-pu4idnwlyz03pz2ma7cyyu3wqf3sqnuum0waqj8fsk.png" alt="Taragalte Festival Logo" style="max-height:40px; width:auto; object-fit:contain;">
+      </div>
+      <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">✕</button>
+    </div>
+    <nav class="mobile-menu-nav" aria-label="Main mobile navigation">
+      <a href="#lineup" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span class="arrow">↳</span> Programme
+      </a>
+      <a href="#tickets" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span class="arrow">↳</span> Tickets
+      </a>
+      <a href="#practical" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span class="arrow">↳</span> Festival
+      </a>
+      <a href="#news" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span class="arrow">↳</span> Presse
+      </a>
+      <a href="#discover" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span class="arrow">↳</span> Association
+      </a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <button class="lang-btn active">EN</button>
+      <button class="lang-btn">FR</button>
+      <button class="lang-btn">DE</button>
+    </div>
+  </div>
+
+  <div class="dialog-off-canvas-main-canvas">
+    <div class="layout-container min-h-screen">
+
+      <!-- ============================
+           HEADER
+           ============================ -->
+      <header class="site-header" id="siteHeader" role="banner">
+        <div class="header-inner">
+          <!-- Logo -->
+          <div id="block-paleo-site-branding" style="display:flex;align-items:center;flex-shrink:0;">
+            <a href="#" class="site-logo" aria-label="Taragalte Festival - Home">
+              <img src="https://www.taragalte.org/wp-content/uploads/elementor/thumbs/logo-taragalte-festival-couleurs-pu4idnwlyz03pz2ma7cyyu3wqf3sqnuum0waqj8fsk.png" alt="Taragalte Festival Logo" style="max-height:40px; width:auto; object-fit:contain;">
+            </a>
+          </div>
+
+          <!-- Desktop Nav -->
+          <nav id="block-paleo-main-menu" class="main-nav" aria-label="Main navigation">
+            <div class="nav-hidden-sm">
+              <a href="#lineup" class="btn btn-black" id="nav-lineup">
+                <span aria-hidden="true" class="nav-arrow-default">↳</span>
+                <span aria-hidden="true" class="nav-arrow-hover" style="display:none;">→</span>
+                <span>Programme</span>
+              </a>
+            </div>
+            <div class="nav-hidden-sm">
+              <a href="#tickets" class="btn btn-black" id="nav-tickets">
+                <span aria-hidden="true" class="nav-arrow-default">↳</span>
+                <span aria-hidden="true" class="nav-arrow-hover" style="display:none;">→</span>
+                <span>Tickets</span>
+              </a>
+            </div>
+            <div class="nav-hidden-sm">
+              <a href="#practical" class="btn btn-black" id="nav-practical">
+                <span aria-hidden="true" class="nav-arrow-default">↳</span>
+                <span aria-hidden="true" class="nav-arrow-hover" style="display:none;">→</span>
+                <span>Festival</span>
+              </a>
+            </div>
+            <div class="nav-hidden-sm">
+              <a href="#news" class="btn btn-black" id="nav-news">
+                <span aria-hidden="true" class="nav-arrow-default">↳</span>
+                <span aria-hidden="true" class="nav-arrow-hover" style="display:none;">→</span>
+                <span>Presse</span>
+              </a>
+            </div>
+            <div class="nav-hidden-sm">
+              <a href="#discover" class="btn btn-black" id="nav-discover">
+                <span aria-hidden="true" class="nav-arrow-default">↳</span>
+                <span aria-hidden="true" class="nav-arrow-hover" style="display:none;">→</span>
+                <span>Association</span>
+              </a>
+            </div>
+          </nav>
+
+          <!-- Menu toggle -->
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="12" width="1" height="24" fill="white"></rect>
+              <rect x="24" y="11" width="1" height="24" transform="rotate(90 24 11)" fill="white"></rect>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- ============================
+           MAIN CONTENT
+           ============================ -->
+      <main role="main">
+        <a id="main-content" tabindex="-1"></a>
+        <div class="layout-content" style="padding-top: 5rem;">
+          <div class="flex-col-gap">
+
+            <!-- ============================
+                 HERO SECTION
+                 ============================ -->
+            <div class="container-block" style="padding: 0.75rem;">
+              <div class="hero-section" style="background:var(--black);border-radius:var(--border-radius-xl);overflow:hidden;position:relative;">
+                <div class="hero-media" style="border-radius:0.75rem;overflow:hidden;position:relative;aspect-ratio:16/9;">
+                  <!-- YouTube iframe — autoplay, muted, looped, no controls -->
+                  <iframe
+                    id="heroYouTube"
+                    src="https://www.youtube.com/embed/m2YG3CQzmCc?autoplay=1&mute=1&loop=1&playlist=m2YG3CQzmCc&controls=0&modestbranding=1&rel=0&origin=http://localhost"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    title="Festival ambiance video"
+                    style="
+                      position:absolute;
+                      top:50%; left:50%;
+                      transform:translate(-50%,-50%) scale(1.15);
+                      width:100%; height:100%;
+                      min-width:100%; min-height:100%;
+                      border:none;
+                      pointer-events:none;
+                    "
+                  ></iframe>
+                  <!-- Transparent overlay — blocks ALL YouTube buttons/clicks -->
+                  <div style="position:absolute;inset:0;z-index:2;background:transparent;pointer-events:all;cursor:default;"></div>
+                  <!-- Gradient overlay -->
+                  <div style="position:absolute;inset:0;z-index:3;background:linear-gradient(to top, rgba(0,0,0,0.55) 0%, transparent 60%);pointer-events:none;"></div>
+                </div>
+                <div class="hero-text">
+                  <h1 class="hero-title">31 Octobre 01 & 02 NOVEMBRE 2025<br>MHAMID EL GHIZLANE, MAROC</h1>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+                 HEADLINERS / PROGRAM
+                 ============================ -->
+            <div id="lineup" class="container-block">
+              <!-- Section title -->
+              <div class="rich-text">
+                <div><h2>ARTISTES NATIONAUX ET INTERNATIONAUX</h2></div>
+              </div>
+
+              <!-- Program filter + grid -->
+              <div id="programSection" data-show-date-filter="1">
+                <!-- Filters -->
+                <div class="program-filters" id="programFilters">
+                  <!-- Day filter -->
+                  <div class="filter-group">
+                    <div class="filter-dropdown" id="filterDay" data-filter-type="day">
+                      <button class="filter-btn" id="filterDayBtn" aria-haspopup="listbox" aria-expanded="false">
+                        <!-- Plus icon -->
+                        <svg class="icon-plus" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                          <rect x="12" width="1" height="24" fill="currentColor"></rect>
+                          <rect x="24" y="11" width="1" height="24" transform="rotate(90 24 11)" fill="currentColor"></rect>
+                        </svg>
+                        <!-- Cross icon -->
+                        <svg class="icon-cross" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="display:none;">
+                          <rect x="11.5" y="0" width="1" height="24" transform="rotate(45 12 12)" fill="currentColor"></rect>
+                          <rect x="11.5" y="0" width="1" height="24" transform="rotate(-45 12 12)" fill="currentColor"></rect>
+                        </svg>
+                        <span class="filter-label">Day</span>
+                        <span class="filter-badge" id="dayBadge" hidden></span>
+                      </button>
+                      <ul class="dropdown-menu" id="dayDropdown" role="listbox" aria-label="Filter by day">
+                        <li>
+                          <button class="dropdown-item" data-filter-id="146" data-filter-label="Tuesday 21 July" role="option" aria-selected="false">
+                            <span>Tuesday 21 July</span>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                              <path d="M4 10.5L8 14.5L16 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="dropdown-item" data-filter-id="515" data-filter-label="Wednesday 22 July" role="option" aria-selected="false">
+                            <span>Wednesday 22 July</span>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                              <path d="M4 10.5L8 14.5L16 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="dropdown-item" data-filter-id="516" data-filter-label="Thursday 23 July" role="option" aria-selected="false">
+                            <span>Thursday 23 July</span>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                              <path d="M4 10.5L8 14.5L16 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="dropdown-item" data-filter-id="518" data-filter-label="Saturday 25 July" role="option" aria-selected="false">
+                            <span>Saturday 25 July</span>
+                            <svg class="icon-check" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                              <path d="M4 10.5L8 14.5L16 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                          </button>
+                        </li>
+                        <li class="dropdown-footer">
+                          <button class="dropdown-clear" data-filter-clear>Clear</button>
+                          <button class="dropdown-apply" data-filter-apply>Filter</button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Artist Grid -->
+                <div class="artist-grid" id="artistGrid">
+
+                  <!-- The Cure -->
+                  <div class="artist-teaser-wrapper" data-nid="61" data-day-ids="[515]" data-style-ids="[498]" data-place-ids="[526]">
+                    <div class="artist-card" style="--card-color: #5C5C5C;">
+                      <div class="artist-img-wrap">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/artist_teaser_small/public/2026-02/v_the-cure_photo_03_andyvellars1.jpg.webp?itok=eG6ohVCK"
+                          srcset="https://yeah.paleo.ch/sites/default/files/styles/artist_teaser_wide/public/2026-02/v_the-cure_photo_03_andyvellars1.jpg.webp?itok=-XFHw1MG 1x"
+                          alt="The Cure"
+                          width="376" height="425">
+                      </div>
+                      <div class="artist-info">
+                        <div class="artist-name">
+                          <a href="#lineup">The Cure</a>
+                        </div>
+                        <div class="artist-events">
+                          <span class="artist-event-tag">Wednesday<span class="sep">►</span>Grande Scène<span class="sep">►</span>23:25</span>
+                        </div>
+                        <div class="artist-styles">
+                          <div>Rock</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Katy Perry -->
+                  <div class="artist-teaser-wrapper" data-nid="35" data-day-ids="[518]" data-style-ids="[493]" data-place-ids="[526]">
+                    <div class="artist-card" style="--card-color: #FCC3CF;">
+                      <div class="artist-img-wrap">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/artist_teaser_small/public/2026-02/v_katy-perry_2.jpg.webp?h=e4f8abcf&itok=BAOjv43O"
+                          alt="Katy Perry"
+                          width="376" height="425">
+                      </div>
+                      <div class="artist-info">
+                        <div class="artist-name">
+                          <a href="#lineup">Katy Perry</a>
+                        </div>
+                        <div class="artist-events">
+                          <span class="artist-event-tag">Saturday<span class="sep">►</span>Grande Scène<span class="sep">►</span>23:40</span>
+                        </div>
+                        <div class="artist-styles">
+                          <div>Pop</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Gorillaz -->
+                  <div class="artist-teaser-wrapper" data-nid="43" data-day-ids="[516]" data-style-ids="[498,496,493]" data-place-ids="[526]">
+                    <div class="artist-card" style="--card-color: #FF9242;">
+                      <div class="artist-img-wrap">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/artist_teaser_small/public/2026-02/site-vertical_gorillaz_photo_01_dr.jpg.webp?itok=hhbRq_qD"
+                          alt="Gorillaz"
+                          width="376" height="425">
+                      </div>
+                      <div class="artist-info">
+                        <div class="artist-name">
+                          <a href="#lineup">Gorillaz</a>
+                        </div>
+                        <div class="artist-events">
+                          <span class="artist-event-tag">Thursday<span class="sep">►</span>Grande Scène<span class="sep">►</span>23:40</span>
+                        </div>
+                        <div class="artist-styles">
+                          <div>Rock</div>
+                          <div>Rap</div>
+                          <div>Pop</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Twenty One Pilots -->
+                  <div class="artist-teaser-wrapper" data-nid="33" data-day-ids="[146]" data-style-ids="[498,493,496]" data-place-ids="[526]">
+                    <div class="artist-card" style="--card-color: #A81528;">
+                      <div class="artist-img-wrap">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/artist_teaser_small/public/2026-02/site-vertical_twenty-one-pilots_photo_01_dr.jpg.webp?itok=3kZu5BkT"
+                          alt="Twenty One Pilots"
+                          width="376" height="425">
+                      </div>
+                      <div class="artist-info">
+                        <div class="artist-name">
+                          <a href="#lineup">Twenty One Pilots</a>
+                        </div>
+                        <div class="artist-events">
+                          <span class="artist-event-tag">Tuesday<span class="sep">►</span>Grande Scène<span class="sep">►</span>23:50</span>
+                        </div>
+                        <div class="artist-styles">
+                          <div>Rock</div>
+                          <div>Pop</div>
+                          <div>Rap</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div><!-- /artist-grid -->
+
+                <!-- No results -->
+                <div class="no-artists-msg" id="noArtistsMsg" aria-live="polite">
+                  <p>No artists match the selected filters.</p>
+                </div>
+
+                <!-- Discover full line-up button -->
+                <div class="button-group" style="padding-top:1.5rem;">
+                  <a href="#lineup" class="btn btn-dark" id="btn-full-lineup">
+                    <span aria-hidden="true">↳</span>
+                    <span>Discover the full line-up</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+                 MARQUEE / LETTERING
+                 ============================ -->
+            <div class="marquee-section" aria-hidden="true">
+              <div class="marquee-track" id="marqueeTrack">
+                <span class="marquee-text">Un festival soucieux et respectueux de son environnement</span>
+                <span class="marquee-text" style="color:rgba(255,255,255,0.3);">✦</span>
+                <span class="marquee-text">Un festival soucieux et respectueux de son environnement</span>
+                <span class="marquee-text" style="color:rgba(255,255,255,0.3);">✦</span>
+                <span class="marquee-text">Un festival soucieux et respectueux de son environnement</span>
+                <span class="marquee-text" style="color:rgba(255,255,255,0.3);">✦</span>
+                <span class="marquee-text">Un festival soucieux et respectueux de son environnement</span>
+                <span class="marquee-text" style="color:rgba(255,255,255,0.3);">✦</span>
+              </div>
+            </div>
+
+            <!-- ============================
+                 SOLD OUT NOTICE
+                 ============================ -->
+            <div id="tickets" class="container-block">
+              <div class="rich-text">
+                <div>
+                  <h2>TICKETS PASS ET PACKS</h2>
+                  <h3>There's still a chance to get tickets!</h3>
+                  <p>This year, the tickets sales for the taragalte festival have had great success. Your loyalty and your confidence are an enormous boost for us. But we are not insensitive to the disappointment of many who did not manage to get tickets because of the rapid sale of these.&nbsp;&nbsp;</p>
+                  <p style="margin-top:.5rem;">No tickets? Here are a few hints to help you to find a solution:</p>
+                </div>
+              </div>
+              <div class="button-group">
+                <a href="#tickets" class="btn btn-dark">
+                  <span aria-hidden="true">↳</span>
+                  <span>More info</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- ============================
+                 NEWS SECTION
+                 ============================ -->
+            <div id="news" class="container-block pt-10" style="padding-top:2.5rem;">
+              <!-- Badge -->
+              <div class="news-badge" aria-label="Section: News">
+                <span class="news-badge-star" aria-hidden="true">✺</span>
+                <span>News</span>
+              </div>
+
+              <div style="margin-top:2.25rem;">
+                <div>
+                  <!-- News header -->
+                  <div class="news-header">
+                    <div class="news-header-title">The latest news</div>
+                  </div>
+
+                  <!-- News grid -->
+                  <div class="news-grid">
+
+                    <!-- News 1 -->
+                    <a href="#news" class="news-card">
+                      <div class="news-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/news_teaser/public/2026-06/ambiance_mer25_annecolliard-0614.jpg.webp?h=7076091f&itok=uxQeLVp3"
+                          alt="Grille horaire" width="320" height="320">
+                      </div>
+                      <div class="news-card-body">
+                        <div class="news-date">Tuesday 30.06.2026</div>
+                        <h2>Concert timetable is here!</h2>
+                        <div><p>Paléo has unveiled the full programme and timetable for its upcoming event.</p></div>
+                      </div>
+                    </a>
+
+                    <!-- News 2 -->
+                    <a href="#news" class="news-card">
+                      <div class="news-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/news_teaser/public/2026-06/v_bss_aidan_klessic.jpg.webp?itok=XGOHfuFn"
+                          alt="Buraka Som Sistema" width="320" height="320">
+                      </div>
+                      <div class="news-card-body">
+                        <div class="news-date">Tuesday 30.06.2026</div>
+                        <h2>Buraka Som Sistema replaces Saint Levant</h2>
+                        <div><p>Buraka Som Sistema rejoint le programme suite à l'annulation de Saint Levant.</p></div>
+                      </div>
+                    </a>
+
+                    <!-- News 3 -->
+                    <a href="#news" class="news-card">
+                      <div class="news-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/news_teaser/public/2026-06/base_hes_so.jpg.webp?itok=5ogoG4hX"
+                          alt="HES-SO" width="320" height="320">
+                      </div>
+                      <div class="news-card-body">
+                        <div class="news-date">Thursday 04.06.2026</div>
+                        <h2>Paléo and HES-SO celebrate 20 years of shared creativity</h2>
+                        <div><p>On the occasion of its 49th edition, Paléo celebrates two decades of collaboration with HES-SO.</p></div>
+                      </div>
+                    </a>
+
+                    <!-- News 4 -->
+                    <a href="#news" class="news-card">
+                      <div class="news-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/news_teaser/public/2026-03/ambiance_ve2025_timon_bachmann_37.jpg.webp?itok=vsHrV_7i"
+                          alt="Ambiance festival" width="320" height="320">
+                      </div>
+                      <div class="news-card-body">
+                        <div class="news-date">Wednesday 25.03.2026</div>
+                        <h2>Paléo 2026 is sold out!</h2>
+                        <div><p>Thank you for your incredible loyalty! For those who didn't get the tickets they wanted, there are still ways to obtain them.</p></div>
+                      </div>
+                    </a>
+
+                  </div><!-- /news-grid -->
+
+                  <div class="news-btn-wrap">
+                    <a href="#news" class="btn btn-dark">
+                      <span aria-hidden="true">↳</span>
+                      <span>View all news</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+                 CTA GROUP (Useful Info)
+                 ============================ -->
+            <div class="container-block">
+              <div class="cta-group">
+                <div class="cta-layout">
+                  <!-- Header -->
+                  <div class="cta-header">
+                    <h3>Psst… a few useful info.</h3>
+                    <div class="cta-header p" style="color:rgba(255,255,255,0.7);font-size:0.9375rem;">
+                      The best related content, so you don't miss a thing and can keep exploring.
+                    </div>
+                  </div>
+
+                  <!-- CTA Cards -->
+                  <div class="cta-cards">
+
+                    <!-- Tickets -->
+                    <div class="cta-card-wrap">
+                      <a href="#tickets" class="cta-card" style="--card-color: #E6C300;" id="cta-tickets">
+                        <span class="cta-card-content">
+                          <span class="cta-card-title">Tickets</span>
+                          <span class="cta-link-label">
+                            <span aria-hidden="true">↳</span>
+                            <span>Take me there</span>
+                          </span>
+                        </span>
+                        <span class="cta-card-thumb">
+                          <img loading="lazy"
+                            src="https://yeah.paleo.ch/sites/default/files/styles/content_teaser_thumb/public/2026-02/foule-ambiance.jpg.webp?itok=COhG5DiL"
+                            alt="Tickets" width="92" height="92">
+                        </span>
+                      </a>
+                    </div>
+
+                    <!-- No Cash -->
+                    <div class="cta-card-wrap">
+                      <a href="#practical" class="cta-card" style="--card-color: #A81528;" id="cta-nocash">
+                        <span class="cta-card-content">
+                          <span class="cta-card-title">No Cash</span>
+                          <span class="cta-link-label">
+                            <span aria-hidden="true">↳</span>
+                            <span>Take me there</span>
+                          </span>
+                        </span>
+                        <span class="cta-card-thumb">
+                          <img loading="lazy"
+                            src="https://yeah.paleo.ch/sites/default/files/styles/content_teaser_thumb/public/2026-02/pratique-nocash.jpg.webp?h=7a6f9c99&itok=Q3Z40Iit"
+                            alt="No Cash" width="92" height="92">
+                        </span>
+                      </a>
+                    </div>
+
+                    <!-- Practical Info -->
+                    <div class="cta-card-wrap">
+                      <a href="#practical" class="cta-card" style="--card-color: #FF9242;" id="cta-practical">
+                        <span class="cta-card-content">
+                          <span class="cta-card-title">Practical information</span>
+                          <span class="cta-link-label">
+                            <span aria-hidden="true">↳</span>
+                            <span>Take me there</span>
+                          </span>
+                        </span>
+                        <span class="cta-card-thumb">
+                          <img loading="lazy"
+                            src="https://yeah.paleo.ch/sites/default/files/styles/content_teaser_thumb/public/2026-03/infos-pratiques-ambiance.jpg.webp?h=447956d4&itok=XGhqjC5S"
+                            alt="Practical information" width="92" height="92">
+                        </span>
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+                 DISCOVER CAROUSEL (Nav Reco)
+                 ============================ -->
+            <div id="discover" class="container-block">
+              <div class="nav-reco-section">
+                <!-- Intro text card -->
+                <div class="nav-reco-intro" style="padding:0.5rem 0.5rem 1rem;">
+                  <div class="nav-reco-intro-title">A 100% indie festival with a bit of rock too…</div>
+                  <p class="nav-reco-intro-desc">Since 1976, Paléo has been an independent, non-profit organisation born from its community.</p>
+                </div>
+
+                <!-- Carousel -->
+                <div class="nav-reco-carousel-wrap">
+                  <div class="nav-reco-carousel" id="navreco-carousel">
+
+                    <!-- Card 1: Our Values -->
+                    <a href="#discover" class="nav-reco-card">
+                      <div class="nav-reco-card-bg" style="background-color:#c39c55;"></div>
+                      <div class="nav-reco-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/nav_reco_card/public/2026-02/valeurs-paleo.webp?itok=some1"
+                          alt="Our Values" width="353" height="520"
+                          onerror="this.style.display='none'">
+                      </div>
+                      <div class="nav-reco-card-gradient" style="background:linear-gradient(to top, #c39c55 20%, transparent 70%);"></div>
+                      <div class="nav-reco-card-label"><h3>Our Values</h3></div>
+                    </a>
+
+                    <!-- Card 2: History -->
+                    <a href="#discover" class="nav-reco-card">
+                      <div class="nav-reco-card-bg" style="background-color:#18479F;"></div>
+                      <div class="nav-reco-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/nav_reco_card/public/2026-02/histoire-paleo.webp?h=508277af&itok=AjSMIRab"
+                          alt="History of Taragalte" width="353" height="520"
+                          onerror="this.style.display='none'">
+                      </div>
+                      <div class="nav-reco-card-gradient" style="background:linear-gradient(to top, #18479F 20%, transparent 70%);"></div>
+                      <div class="nav-reco-card-label"><h3>History</h3></div>
+                    </a>
+
+                    <!-- Card 3: The Institution -->
+                    <a href="#discover" class="nav-reco-card">
+                      <div class="nav-reco-card-bg" style="background-color:#FF9242;"></div>
+                      <div class="nav-reco-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/nav_reco_card/public/2026-04/sized_ambiance_ma2025_lucie_gertsch_3944.jpg.webp?itok=pPHWOfbX"
+                          alt="The Institution" width="353" height="520"
+                          onerror="this.style.display='none'">
+                      </div>
+                      <div class="nav-reco-card-gradient" style="background:linear-gradient(to top, #FF9242 20%, transparent 70%);"></div>
+                      <div class="nav-reco-card-label"><h3>The institution</h3></div>
+                    </a>
+
+                    <!-- Card 4: Sustainability -->
+                    <a href="#discover" class="nav-reco-card">
+                      <div class="nav-reco-card-bg" style="background-color:#A4C200;"></div>
+                      <div class="nav-reco-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/nav_reco_card/public/2026-02/durable.jpg.webp?h=c5ba2771&itok=uSrHY4QT"
+                          alt="Our Sustainability Policy" width="353" height="520"
+                          onerror="this.style.display='none'">
+                      </div>
+                      <div class="nav-reco-card-gradient" style="background:linear-gradient(to top, #A4C200 20%, transparent 70%);"></div>
+                      <div class="nav-reco-card-label"><h3>Our Sustainability Policy</h3></div>
+                    </a>
+
+                    <!-- Card 5: Volunteers -->
+                    <a href="#discover" class="nav-reco-card">
+                      <div class="nav-reco-card-bg" style="background-color:#E6C300;"></div>
+                      <div class="nav-reco-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/nav_reco_card/public/2026-02/staff.jpg.webp?h=9782fad2&itok=V9-CL18t"
+                          alt="Volunteers" width="353" height="520"
+                          onerror="this.style.display='none'">
+                      </div>
+                      <div class="nav-reco-card-gradient" style="background:linear-gradient(to top, #E6C300 20%, transparent 70%);"></div>
+                      <div class="nav-reco-card-label"><h3>Volunteers</h3></div>
+                    </a>
+
+                    <!-- Card 6: The Team -->
+                    <a href="#discover" class="nav-reco-card">
+                      <div class="nav-reco-card-bg" style="background-color:#AEA5CC;"></div>
+                      <div class="nav-reco-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/nav_reco_card/public/2026-03/ambiance-nuit-romane-santarelli.jpg.webp?h=d333bd0d&itok=VjCgRIpZ"
+                          alt="The team" width="353" height="520"
+                          onerror="this.style.display='none'">
+                      </div>
+                      <div class="nav-reco-card-gradient" style="background:linear-gradient(to top, #AEA5CC 20%, transparent 70%);"></div>
+                      <div class="nav-reco-card-label"><h3>The team</h3></div>
+                    </a>
+
+                    <!-- Card 7: Awards -->
+                    <a href="#discover" class="nav-reco-card">
+                      <div class="nav-reco-card-bg" style="background-color:#18479F;"></div>
+                      <div class="nav-reco-card-img">
+                        <img loading="lazy"
+                          src="https://yeah.paleo.ch/sites/default/files/styles/nav_reco_card/public/2025-12/drones.jpg.webp?itok=psTbc82v"
+                          alt="Awards and certifications" width="353" height="520"
+                          onerror="this.style.display='none'">
+                      </div>
+                      <div class="nav-reco-card-gradient" style="background:linear-gradient(to top, #18479F 20%, transparent 70%);"></div>
+                      <div class="nav-reco-card-label"><h3>Awards and certifications</h3></div>
+                    </a>
+
+                  </div><!-- /nav-reco-carousel -->
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="nav-reco-controls">
+                  <button type="button" class="carousel-btn" id="navrecoPrev" aria-label="Previous" disabled>
+                    <span aria-hidden="true">←</span>
+                  </button>
+                  <button type="button" class="carousel-btn" id="navreco-next" aria-label="Next">
+                    <span aria-hidden="true">→</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ============================
+                 TWO-COLUMN IMAGE BLOCKS
+                 ============================ -->
+            <div id="practical" class="two-col-grid">
+
+              <!-- Left: The Festival -->
+              <div class="container-block" style="position:relative;">
+                <div class="img-video-block">
+                  <img loading="lazy"
+                    src="https://yeah.paleo.ch/sites/default/files/styles/image_video_bkg_half_small/public/2026-02/ambiance-festival-experience.webp?h=ab8a584c&itok=mTJ2hIsX"
+                    alt="Festival experience"
+                    style="width:100%;border-radius:var(--border-radius-xl);display:block;object-fit:cover;min-height:400px;">
+                </div>
+                <div class="img-video-cta" style="position:absolute;top:0.75rem;left:0.75rem;z-index:20;width:calc(100% - 1.5rem);max-width:320px;">
+                  <a href="#discover" class="cta-card" style="--card-color: #00ABB5; display:flex; justify-content:space-between; align-items:flex-start; width:100%; height:116px; padding:0.75rem; border-radius:0.75rem; background:rgba(26,26,26,0.95); color:#fff; border:none; cursor:pointer; text-decoration:none; font-size:1.4375rem; line-height:normal; transition:background 0.3s ease, color 0.3s ease; position:relative; overflow:hidden;" id="cta-festival">
+                    <span class="cta-card-content">
+                      <span class="cta-card-title">The festival</span>
+                      <span class="cta-link-label"><span aria-hidden="true">↳</span><span>Take me there</span></span>
+                    </span>
+                    <span class="cta-card-thumb">
+                      <img loading="lazy"
+                        src="https://yeah.paleo.ch/sites/default/files/styles/content_teaser_thumb/public/2026-02/ambiance-festival-experience.webp?itok=ezq-t1lj"
+                        alt="Festival" width="92" height="92">
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Right: Aftermovies -->
+              <div class="container-block" style="position:relative;">
+                <div class="img-video-block">
+                  <img loading="lazy"
+                    src="https://yeah.paleo.ch/sites/default/files/styles/image_video_bkg_half_small/public/2026-02/experience-concert.jpg.webp?itok=5qDzOoyO"
+                    alt="Concert experience"
+                    style="width:100%;border-radius:var(--border-radius-xl);display:block;object-fit:cover;min-height:400px;">
+                </div>
+                <div class="img-video-cta" style="position:absolute;top:0.75rem;left:0.75rem;z-index:20;width:calc(100% - 1.5rem);max-width:320px;">
+                  <a href="#discover" class="cta-card" style="--card-color: #AEA5CC; display:flex; justify-content:space-between; align-items:flex-start; width:100%; height:116px; padding:0.75rem; border-radius:0.75rem; background:rgba(26,26,26,0.95); color:#fff; border:none; cursor:pointer; text-decoration:none; font-size:1.4375rem; line-height:normal; transition:background 0.3s ease, color 0.3s ease; position:relative; overflow:hidden;" id="cta-aftermovies">
+                    <span class="cta-card-content">
+                      <span class="cta-card-title">Aftermovies</span>
+                      <span class="cta-link-label"><span aria-hidden="true">↳</span><span>Take me there</span></span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- ============================
+                 SPONSORS
+                 ============================ -->
+            <div class="container-block">
+              <div class="rich-text">
+                <div><h2>PARTENAIRES INSTITUTIONNELS ET MÉDIAS</h2></div>
+              </div>
+              <div class="sponsors-section">
+                <div class="sponsors-logos">
+                  <img loading="lazy"
+                    src="https://yeah.paleo.ch/sites/default/files/styles/sponsors/public/2026-02/sponsor_swissmilk.png"
+                    alt="Swissmilk" style="height:40px;width:auto;object-fit:contain;filter:brightness(0) invert(1);"
+                    onerror="this.parentElement.innerHTML='<span class=\'sponsor-item\'>Swissmilk</span>'">
+                  <img loading="lazy"
+                    src="https://yeah.paleo.ch/sites/default/files/styles/sponsors/public/2026-02/sponsor_romande-energie.png"
+                    alt="Romande Energie" style="height:40px;width:auto;object-fit:contain;filter:brightness(0) invert(1);"
+                    onerror="this.parentElement.innerHTML='<span class=\'sponsor-item\'>Romande Énergie</span>'">
+                  <span class="sponsor-item">Rivella</span>
+                  <span class="sponsor-item">Ice Tea</span>
+                  <span class="sponsor-item">Henniez</span>
+                  <span class="sponsor-item">SIG</span>
+                  <span class="sponsor-item">BCV</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /flex-col-gap -->
+        </div><!-- /layout-content -->
+
+        <!-- ============================
+             FOOTER
+             ============================ -->
+        <footer class="site-footer" role="contentinfo">
+          <div class="footer-inner">
+            <!-- Brand -->
+            <div class="footer-brand">
+              <div class="site-logo">
+                <img src="https://www.taragalte.org/wp-content/uploads/elementor/thumbs/logo-taragalte-festival-couleurs-pu4idnwlyz03pz2ma7cyyu3wqf3sqnuum0waqj8fsk.png" alt="Taragalte Festival Logo" style="max-height:50px; width:auto; object-fit:contain;">
+              </div>
+              <p>Under The Stars. Un festival soucieux et respectueux de son environnement au cœur du Sahara.</p>
+              <p style="margin-top:0.5rem;color:rgba(255,255,255,0.25);">M'Hamid El Ghizlane, Maroc — 31 Octobre - 02 Novembre 2025</p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-links">
+              <div class="footer-col">
+                <h4>Festival</h4>
+                <a href="#lineup">Line-up</a>
+                <a href="#lineup">Artists</a>
+                <a href="#tickets">Tickets</a>
+                <a href="#practical">Timetable</a>
+              </div>
+              <div class="footer-col">
+                <h4>Practical</h4>
+                <a href="#practical">Access & Transport</a>
+                <a href="#practical">No Cash</a>
+                <a href="#practical">Camping</a>
+                <a href="#practical">Accessibility</a>
+              </div>
+              <div class="footer-col">
+                <h4>About</h4>
+                <a href="#discover">History</a>
+                <a href="#discover">Our Values</a>
+                <a href="#discover">Sustainability</a>
+                <a href="#discover">Volunteers</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom bar -->
+          <div class="footer-bottom">
+            <p class="footer-copyright">
+              &copy; 2025 Taragalte Festival. All rights reserved.
+            </p>
+            <div style="display:flex;align-items:center;gap:1.5rem;">
+              <div class="footer-social" aria-label="Social media links">
+                <a href="#" class="social-link" aria-label="Instagram">ig</a>
+                <a href="#" class="social-link" aria-label="Facebook">fb</a>
+                <a href="#" class="social-link" aria-label="YouTube">yt</a>
+                <a href="#" class="social-link" aria-label="Twitter / X">𝕏</a>
+              </div>
+              <div style="display:flex;gap:0.5rem;">
+                <button class="lang-btn active" onclick="setLang('EN')">EN</button>
+                <button class="lang-btn" onclick="setLang('FR')">FR</button>
+                <button class="lang-btn" onclick="setLang('DE')">DE</button>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      </main>
+    </div><!-- /layout-container -->
+  </div><!-- /dialog-off-canvas-main-canvas -->
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
