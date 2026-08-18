@@ -24,7 +24,7 @@
   <div class="mobile-menu-overlay" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Site navigation">
     <div class="mobile-menu-header">
       <div class="site-logo">
-        <img src="https://www.taragalte.org/wp-content/uploads/elementor/thumbs/logo-taragalte-festival-couleurs-pu4idnwlyz03pz2ma7cyyu3wqf3sqnuum0waqj8fsk.png" alt="Taragalte Festival Logo" style="max-height:40px; width:auto; object-fit:contain;">
+        <img src="./taragalte-logo.png" alt="Taragalte Festival Logo" style="max-height:65px; width:auto; object-fit:contain;">
       </div>
       <button class="mobile-menu-close" id="menuClose" aria-label="Close menu">✕</button>
     </div>
@@ -63,7 +63,7 @@
           <!-- Logo -->
           <div id="block-paleo-site-branding" style="display:flex;align-items:center;flex-shrink:0;">
             <a href="#" class="site-logo" aria-label="Taragalte Festival - Home">
-              <img src="https://www.taragalte.org/wp-content/uploads/elementor/thumbs/logo-taragalte-festival-couleurs-pu4idnwlyz03pz2ma7cyyu3wqf3sqnuum0waqj8fsk.png" alt="Taragalte Festival Logo" style="max-height:40px; width:auto; object-fit:contain;">
+              <img src="./taragalte-logo.png" alt="Taragalte Festival Logo" style="max-height:65px; width:auto; object-fit:contain;">
             </a>
           </div>
 
@@ -131,24 +131,7 @@
               <div class="hero-section" style="background:var(--black);border-radius:var(--border-radius-xl);overflow:hidden;position:relative;">
                 <div class="hero-media" style="border-radius:0.75rem;overflow:hidden;position:relative;aspect-ratio:16/9;">
                   <!-- YouTube iframe — autoplay, muted, looped, no controls -->
-                  <iframe
-                    id="heroYouTube"
-                    src="https://www.youtube.com/embed/m2YG3CQzmCc?autoplay=1&mute=1&loop=1&playlist=m2YG3CQzmCc&controls=0&modestbranding=1&rel=0&origin=http://localhost"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    title="Festival ambiance video"
-                    style="
-                      position:absolute;
-                      top:50%; left:50%;
-                      transform:translate(-50%,-50%) scale(1.15);
-                      width:100%; height:100%;
-                      min-width:100%; min-height:100%;
-                      border:none;
-                      pointer-events:none;
-                    "
-                  ></iframe>
+                  <video id="heroVideo" src="./hero.mp4" autoplay muted loop playsinline style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:100%; height:100%; object-fit:cover; border:none; pointer-events:none;"></video>
                   <!-- Transparent overlay — blocks ALL YouTube buttons/clicks -->
                   <div style="position:absolute;inset:0;z-index:2;background:transparent;pointer-events:all;cursor:default;"></div>
                   <!-- Gradient overlay -->
@@ -755,7 +738,7 @@
             <!-- Brand -->
             <div class="footer-brand">
               <div class="site-logo">
-                <img src="https://www.taragalte.org/wp-content/uploads/elementor/thumbs/logo-taragalte-festival-couleurs-pu4idnwlyz03pz2ma7cyyu3wqf3sqnuum0waqj8fsk.png" alt="Taragalte Festival Logo" style="max-height:50px; width:auto; object-fit:contain;">
+                <img src="./taragalte-logo.png" alt="Taragalte Festival Logo" style="max-height:80px; width:auto; object-fit:contain;">
               </div>
               <p>Under The Stars. Un festival soucieux et respectueux de son environnement au cœur du Sahara.</p>
               <p style="margin-top:0.5rem;color:rgba(255,255,255,0.25);">M'Hamid El Ghizlane, Maroc — 31 Octobre - 02 Novembre 2025</p>
@@ -818,3 +801,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
